@@ -1,0 +1,133 @@
+#root {
+  max-width: 1280px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.gameitem {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 4px;
+
+  height: 64px;
+  will-change: filter;
+  transition: filter 300ms;
+  align-items: center;
+  border-radius: 10px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gameitem:hover {
+  background-color: #f3f3ff;
+}
+.gameitem.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+/* .gameitem:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.gameitem.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+
+.thumbnail {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  object-fit: cover;
+  margin-right: 8px;
+}
+
+.averageScore {
+  flex: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  font-size: smaller;
+  line-height: 20px;
+  text-align: center;
+  top: 18px;
+  left: -24px;
+  color: #ddd;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.averageScore9 {
+  background-color: gold;
+}
+.averageScore8 {
+  background-color: #1d804c;
+}
+.averageScore7 {
+  background-color: #1978b3;
+}
+.averageScore6 {
+  background-color: #5369a2;
+}
+.averageScore5 {
+  background-color: #5369a2;
+}
+.averageScore4 {
+  background-color: #d71925;
+}
+.averageScore3 {
+  background-color: #d71925;
+}
+.averageScore2 {
+  background-color: #b2151f;
+}
+.averageScore1 {
+  background-color: #b2151f;
+}
+.averageScore0 {
+  background-color: #666e75;
+}
+
+.gameCountLabel {
+  margin-left: 8px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
